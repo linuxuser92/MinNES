@@ -5,7 +5,7 @@ This is a beta, so not release. you can complies to run.
 cl.exe /EHsc /Zi /Od /Fe:MinNES.exe Cartridge.cpp CPU.cpp Mapper.cpp MinNES.cpp NES.cpp PPU.cpp Win32Renderer.cpp
 ```
 
-# GCC/G++:
+# MinGW:
 
 ```cmd
 g++ -std=c++17 -Wall -g -O0 Cartridge.cpp CPU.cpp Mapper.cpp MinNES.cpp NES.cpp PPU.cpp Win32Renderer.cpp -o MinNES.exe
