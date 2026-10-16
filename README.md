@@ -1,4 +1,4 @@
-This is a beta, so not release. you can complies to run.
+This is a beta. under developments, so not release. you can complies to run.
 
 # MSVC:
 ```cmd
