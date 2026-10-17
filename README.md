@@ -1,8 +1,10 @@
 This is a beta. under developments, so not release. you can complies to run.
+Bugs Fixes:
+Fix black screen due to CPU/PPU issues
 
 # MSVC:
 ```cmd
-cl.exe /EHsc /Zi /Od /Fe:MinNES.exe Cartridge.cpp CPU.cpp Mapper.cpp MinNES.cpp NES.cpp PPU.cpp Win32Renderer.cpp
+cl.exe /EHsc /Zi /Od /Fe:MinNES.exe Cartridge.cpp CPU.cpp Mapper.cpp MinNES.cpp NES.cpp PPU.cpp Win32Renderer.cpp NsfLoader.cpp NsfeLoader.cpp ROMLoader.cpp Loader.cpp FdsLoader.cpp BaseNesPpu.cpp APU.cpp
 ```
 
 # MinGW:
