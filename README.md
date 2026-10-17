@@ -4,11 +4,11 @@ Fix black screen due to CPU/PPU issues
 
 # MSVC:
 ```cmd
-cl.exe /EHsc /Zi /Od /Fe:MinNES.exe Cartridge.cpp CPU.cpp Mapper.cpp MinNES.cpp NES.cpp PPU.cpp Win32Renderer.cpp NsfLoader.cpp NsfeLoader.cpp ROMLoader.cpp Loader.cpp FdsLoader.cpp BaseNesPpu.cpp APU.cpp
+cl /EHsc /std:c++17 /O2 /Fe:MinNES.exe *.cpp /link user32.lib gdi32.lib
 ```
 
 # MinGW:
 
 ```cmd
-g++ -std=c++17 -Wall -g -O0 Cartridge.cpp CPU.cpp Mapper.cpp MinNES.cpp NES.cpp PPU.cpp Win32Renderer.cpp NsfLoader.cpp NsfeLoader.cpp ROMLoader.cpp Loader.cpp FdsLoader.cpp BaseNesPpu.cpp APU.cpp -o MinNES.exe
+g++ -std=c++17 -O2 -Wall *.cpp -o MinNES.exe -lgdi32 -luser32
 ```
